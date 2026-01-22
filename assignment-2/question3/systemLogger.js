@@ -1,29 +1,14 @@
 const os = require("os");
 const fs = require("fs");
 
-// Function to get system info
-function logSystemInfo() {
-  const cpuInfo = os.cpus()[0].model;
-  const totalMemory = (os.totalmem() / 1024 / 1024).toFixed(2); // MB
-  const freeMemory = (os.freemem() / 1024 / 1024).toFixed(2);   // MB
-  const platform = os.platform();
-  const time = new Date().toLocaleString();
+setInterval(() => {
+  const info =
+    "Platform: " + os.platform() + "\n" +
+    "Total Memory: " + os.totalmem() + "\n" +
+    "CPU Cores: " + os.cpus().length + "\n" +
+    "---------------------\n";
 
-  const logData = `
-Time: ${time}
-CPU: ${cpuInfo}
-Platform: ${platform}
-Total Memory: ${totalMemory} MB
-Free Memory: ${freeMemory} MB
--------------------------
-`;
-
-  fs.appendFile("systemInfo.log", logData, (err) => {
-    if (err) {
-      console.error("Error writing file");
-    }
+  fs.appendFile("systemInfo.log", info, () => {
+    console.log("System info logged");
   });
-}
-
-// Run every 5 seconds
-setInterval(logSystemInfo, 5000);
+}, 5000);
