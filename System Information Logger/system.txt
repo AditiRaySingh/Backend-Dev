@@ -1,0 +1,36 @@
+Platform: win32
+CPU Cores: 8
+Total Memory: 8260378624
+Free Memory: 444928000
+----------------------
+Platform: win32
+CPU Cores: 8
+Total Memory: 8260378624
+Free Memory: 1110159360
+----------------------
+Platform: win32
+CPU Cores: 8
+Total Memory: 8260378624
+Free Memory: 1102049280
+----------------------
+Platform: win32
+CPU: 8
+Free Memory: 1326272512
+Platform: win32
+CPU: 8
+Free Memory: 1285525504
+Platform: win32
+CPU: 8
+Free Memory: 1243697152
+Platform: win32
+CPU: 8
+Free Memory: 1210421248
+Platform: win32
+CPU: 8
+Free Memory: 1189085184
+Platform: win32
+CPU: 8
+Free Memory: 1132855296
+Platform: win32
+CPU: 8
+Free Memory: 1188085760
