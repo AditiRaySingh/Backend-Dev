@@ -1,6 +1,6 @@
 # Backend-Dev
 
-# Leet Profile
+# LeetCode Profile
 
 https://leetcode.com/u/AditiRaySingh/
 
